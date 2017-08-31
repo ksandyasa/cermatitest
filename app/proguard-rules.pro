@@ -23,6 +23,8 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keep class android.support.v7.** { *; }
+#-dontwarn android.support.v7.**
 -dontwarn org.apache.lang.**
 -dontwarn org.codehaus.mojo.animal_sniffer.**
 -dontwarn com.squareup.**
@@ -37,5 +39,3 @@
 -keepclasseswithmembernames class * {
     @butterknife.* <methods>;
 }
--keepattributes *Annotation*, Exceptions, Signature, Deprecated, SourceFile, SourceDir, LineNumberTable, LocalVariableTable, LocalVariableTypeTable, Synthetic, EnclosingMethod, RuntimeVisibleAnnotations, RuntimeInvisibleAnnotations, RuntimeVisibleParameterAnnotations, RuntimeInvisibleParameterAnnotations, AnnotationDefault, InnerClasses
--keep class com.cermati.myapplication.** {*;}
