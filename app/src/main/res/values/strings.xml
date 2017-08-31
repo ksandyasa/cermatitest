@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cermati Test</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search Github users</string>
+</resources>
